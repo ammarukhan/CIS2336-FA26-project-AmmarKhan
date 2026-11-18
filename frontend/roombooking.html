@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose from five sample rooms and try the UH Sugar Land Student Center booking demonstration.">
+  <title>Room Booking | UH Sugar Land Student Center</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script><script defer src="booking.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="UH Sugar Land Student Center, home"><span class="brand-mark" aria-hidden="true">UH</span><span class="brand-lines"><strong>UH Sugar Land</strong><span>Student Center</span></span></a><button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" type="button"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul class="nav-links" id="nav-links"></ul></nav></div></header>
+<main class="page-main container" id="main">
+  <div class="page-heading"><p class="eyebrow">Find your space</p><h1 class="page-title">Room Booking</h1><p class="page-intro">Reserve a space for studying, group work, or a meeting. Choose from five sample rooms and check availability for your requested date and time.</p></div>
+  <p class="notice" role="note"><strong>Phase 2 demonstration:</strong> This page uses simulated room availability stored in your browser tab. It does not create a real university reservation. Server-side availability checks will be implemented in Phase 3.</p>
+  <div class="booking-layout" style="margin-top: 24px">
+    <section class="card form-card" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Request a Room</h2><p class="form-subtitle">All fields marked * are required. Demo booking hours: 8:00 a.m.–8:00 p.m.</p>
+      <form id="booking-form" novalidate>
+        <div class="field-grid">
+          <div class="field"><label for="student-name">Full name *</label><input id="student-name" name="studentName" type="text" autocomplete="name" minlength="2" maxlength="80" placeholder="Your full name" required><span class="field-error" id="student-name-error"></span></div>
+          <div class="field"><label for="student-email">Email *</label><input id="student-email" name="studentEmail" type="email" autocomplete="email" maxlength="120" placeholder="yourname@uh.edu" required><span class="field-error" id="student-email-error"></span></div>
+          <div class="field wide"><label for="room">Room *</label><select id="room" name="room" required><option value="">Select a room</option><option value="study-a">Quiet Study Room A · 2 people</option><option value="study-b">Group Study Room B · 4 people</option><option value="collaboration">Collaboration Suite · 6 people</option><option value="meeting">Meeting Room · 8 people</option><option value="multipurpose">Multipurpose Room · 16 people</option></select><span class="field-error" id="room-error"></span></div>
+          <div class="field"><label for="date">Date *</label><input id="date" name="date" type="date" required><span class="field-help">Today through the next 90 days</span><span class="field-error" id="date-error"></span></div>
+          <div class="field"><label for="time">Start time *</label><select id="time" name="time" required><option value="">Select a time</option></select><span class="field-error" id="time-error"></span></div>
+          <div class="field"><label for="duration">Duration *</label><select id="duration" name="duration" required><option value="">Select duration</option><option value="30">30 minutes</option><option value="60">1 hour</option><option value="90">1 hour 30 minutes</option><option value="120">2 hours</option></select><span class="field-error" id="duration-error"></span></div>
+          <div class="field"><label for="purpose">Purpose *</label><select id="purpose" name="purpose" required><option value="">Select purpose</option><option value="Individual study">Individual study</option><option value="Group project">Group project</option><option value="Club meeting">Club meeting</option><option value="Other academic use">Other academic use</option></select><span class="field-error" id="purpose-error"></span></div>
+        </div>
+        <div class="form-actions"><button class="btn btn-secondary" type="button" id="check-availability">Check Availability</button><button class="btn btn-primary" type="submit">Submit Demo Request <span aria-hidden="true">→</span></button></div>
+        <div class="status" id="booking-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+    <aside class="card availability-card" aria-labelledby="availability-title">
+      <h2 id="availability-title">Room Availability</h2><p>Select a room, date, time, and duration to check whether your request conflicts with a sample booking.</p>
+      <div class="availability-placeholder" id="availability-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><span>Your availability result will appear here.</span></div>
+      <div class="status availability-status" id="availability-status" aria-live="polite" role="status"></div>
+      <p class="small text-muted">Sample reservations reset when you reload the page. Availability is not synced with UH systems.</p>
+    </aside>
+  </div>
+  <section class="room-list" aria-labelledby="room-list-heading"><h2 class="section-title" id="room-list-heading">Explore the five room options</h2><p class="section-note">Choose a room below to fill the room selector automatically. All rooms are hypothetical for this project.</p>
+    <div class="room-grid">
+      <button class="room-option" type="button" data-room="study-a" aria-pressed="false"><span class="room-label">Room 01</span><strong>Quiet Study Room A</strong><span>Up to 2 people</span></button>
+      <button class="room-option" type="button" data-room="study-b" aria-pressed="false"><span class="room-label">Room 02</span><strong>Group Study Room B</strong><span>Up to 4 people</span></button>
+      <button class="room-option" type="button" data-room="collaboration" aria-pressed="false"><span class="room-label">Room 03</span><strong>Collaboration Suite</strong><span>Up to 6 people</span></button>
+      <button class="room-option" type="button" data-room="meeting" aria-pressed="false"><span class="room-label">Room 04</span><strong>Meeting Room</strong><span>Up to 8 people</span></button>
+      <button class="room-option" type="button" data-room="multipurpose" aria-pressed="false"><span class="room-label">Room 05</span><strong>Multipurpose Room</strong><span>Up to 16 people</span></button>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-title">UH Sugar Land Student Center</p><p class="footer-note">CIS 2336 academic project · Proposed student center, not an official UH booking service</p></div><nav class="footer-links" id="footer-links" aria-label="Footer navigation"></nav></div></footer>
+</body>
+</html>

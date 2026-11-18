@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Sources and AI development prompts for the CIS 2336 UH Sugar Land Student Center web project."><title>References | UH Sugar Land Student Center</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script defer src="script.js"></script></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="UH Sugar Land Student Center, home"><span class="brand-mark" aria-hidden="true">UH</span><span class="brand-lines"><strong>UH Sugar Land</strong><span>Student Center</span></span></a><button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" type="button"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Menu</button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul class="nav-links" id="nav-links"></ul></nav></div></header>
+<main class="page-main container" id="main"><div class="page-heading"><p class="eyebrow">Project documentation</p><h1 class="page-title">References &amp; AI Prompts</h1><p class="page-intro">Sources used for website content and multimedia, along with the prompts shared with AI during the development process, as required by the project specifications.</p></div>
+  <section class="card card-pad references-section" aria-labelledby="sources-heading"><h2 class="section-title" id="sources-heading">Content &amp; Multimedia Sources</h2>
+    <ol class="source-list"><li><strong>University of Houston Sugar Land Campus.</strong> Campus overview and academic context. <a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener noreferrer">uh.edu/sugarland</a>.</li><li><strong>University of Houston.</strong> Photo of the Albert and Mamie George Building, used on the homepage. <a href="https://www.uh.edu/sugarland/_images/news-images/university-of-houston-at-sugar-land_news_front-of-albert-mamie-george-building-in-summer_900x600.jpg" target="_blank" rel="noopener noreferrer">View source image</a>.</li><li><strong>University of Houston Stories.</strong> Sugar Land campus photograph, used on the About page. <a href="https://stories.uh.edu/2024UHT-feel-the-peace-flow/index.html" target="_blank" rel="noopener noreferrer">View source story</a>.</li><li><strong>University of Houston.</strong> Embedded campus video from the <a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener noreferrer">official Sugar Land campus homepage</a>.</li><li><strong>Course materials.</strong> CIS 2336 Web Project FA26 specifications, professor's starter ZIP, and Ammar Khan's Phase 1 Plan &amp; Design submission.</li></ol>
+    <p class="small text-muted">The student center, room names, capacities, demonstration booking hours, and sample bookings are created for this classroom project and should not be treated as real UH facility policies.</p>
+  </section>
+  <section class="card card-pad references-section" aria-labelledby="prompts-heading"><h2 class="section-title" id="prompts-heading">AI Tool Use &amp; Prompts</h2><p>ChatGPT (OpenAI) assisted with reviewing the assignment, translating the approved design into HTML/CSS/JavaScript, organizing the files, and implementing and testing interactive behavior. The original prompts provided by the student are reproduced below. The long professor-provided requirements and Phase 1 PDF were supplied as reference materials.</p>
+    <div class="prompt-list">
+      <details class="prompt-item"><summary>Prompt 1 — Request for Phase 2 project assistance</summary><blockquote>Ive got a Web Project for my CIS 2336 class that I need assistance with. It is Phase 2 Front-end implementation of the project. I can give you the instructions given by my professor as well as what I submitted for Phase 1 Plan &amp; Design back in december which I got a 100% grade on. Using those pieces of Info, I need you to help me complete this phase 2 flawlessly. Do you have any questions Keep answers concise but detailed, no extra info is needed.</blockquote></details>
+      <details class="prompt-item"><summary>Prompt 2 — Assignment specifications and Phase 2 rubric (full text supplied)</summary><blockquote>Alright first here is just an OVERALL description and specifications for the project with all overall requirements -
+
+Web Project CIS 2336 FA26
+
+### Description
+
+Imagine that the University of Houston (UH) is planning to open a new student center on the UH Sugar Land campus. You are asked to implement a website for the new student center. This UH Sugar Land Student Center website project is designed to give students practical experience in web application development using HTML, CSS, JavaScript, and Node.js. This project focuses on creating a functional, user-friendly website incorporating basic web technologies and server-side scripting.
+
+This is an **individual project**. You have to design the project and work on it by yourself. You are the only driver of your own project. Your challenge is to come up with original designs that capture the essence of the new student center. Remember, no copying from others – make it your own!
+
+The project will be done in phases and each phase has deliverables.
+
+The website must cover all aspects of the course (HTML, CSS, JavaScript, and Node.js). The detailed objectives of the project are:
+
+- Develop a basic understanding of web application architecture.
+- Utilize HTML and CSS to structure and style a web page.
+- Implement client-side scripting with JavaScript for dynamic content.
+- Use Node.js to create server-side functionality and handle HTTP requests.
+
+### Project Specifications &amp; Requirements
+
+#### Front-End
+
+1. Design and implement a homepage with a navigation menu. Implement a dynamic menu display using JavaScript. Add a section titled &quot;Developer Contact&quot; that displays your name and your UH email address.
+2. Design and implement a FAQ page (5 FAQ items) that open up via collapsible.
+3. Develop a simple room booking form page (5 rooms) with validation checks for each room&#x27;s availability (will be handled by the backend later). The form should follow best practices for validating form fields.
+4. Design and implement a reference page. For this web app development project, AI tools may be used only if you display your AI prompts on this reference webpage. Your prompts help demonstrate your reasoning and development process. Copying and pasting AI-generated code without providing your prompts may be treated as improper use.
+5. The website should integrate multimedia elements like images or videos (hosted remotely and embedded—you don&#x27;t have to create the video). It should also follow best practices for User Interface design.
+
+#### Back-End
+
+1. Set up a basic backend service using Node.js and Express.
+2. Handle GET and POST requests processing the room booking form data (e.g., room&#x27;s availability validation, return a confirmation or decline after form submission). Booked room information is stored in a JavaScript object on the backend - not permanent.
+
+Deliverables (for details and deadlines, please refer to the particular assignment)
+
+Planning &amp; Design Document — 9/21/2026 — 10%
+Implementation of Front-End (Code &amp; Developer Readme) — 11/15/2026 — 40%
+Implementation of Server-Side Development (Code &amp; Developer Readme) — 12/09/2026 — 40%
+Front-end and backend code functioning together — 12/09/2026 — 10%
+
+Each deliverable will be graded using rubrics attached to the assignment.
+
+Here is Phase 2 Front End Implementation Instructions. -
+
+Web Project Assignment Phase 2: Front-end implementation UPDATED!!
+
+Please refer to the description &amp; specifications for the web project for overall requirements.
+
+This phase focuses on the front-end code.
+
+Follow the instructions below to submit your code:
+
+1. Download the starter code here: CIS2336-FA26-project-FirstNameLastName.zip
+2. Unzip the file and rename the main project folder by replacing with your actual first and last name.
+3. Put your frontend code (if any) inside the &#x27;frontend&#x27; subfolder.
+5. Open the project folder in VS code.
+6. In the Source Control tab, click &#x27;Publish to GitHub&#x27;, and select &#x27;Publish to GitHub Public repository&#x27;. Please ensure that you publish to a public repository, or else the graders cannot access your code.
+7. Submit only your GitHub public repository URL here.
+
+Please not that the Nov. 19 due date is just a checkpoint for you to test publishing your code to GitHub public repo and for me to verify that I can access your repository. You can continue updating your code after this date. Final grading for the project (including frontend and backend) will be conducted once the complete project is finalized and submitted by Dec. 5th.
+
+Project Front-end rubric:
+HTML Structure and CSS Styling — 15 points
+Home page — 15 points
+FAQ Page — 15 points
+Room Booking form Page — 15 points
+Multimedia Integration — 10 points
+Functionality, Interactivity, User Experience and Navigation — 20 points
+Code Quality, File Organization and Submission — 10 points</blockquote></details>
+      <details class="prompt-item"><summary>Prompt 3 — Phase 1 document and starter files supplied</summary><blockquote>Attached is both the PDF of the phase 1 planning and design doc I submitted as well as the starter zip file provided by my professor.</blockquote></details>
+    </div>
+    <p class="small text-muted">AI assistance is disclosed for academic transparency in accordance with the course project policy. The submitted website is an educational prototype built from the student's Phase 1 design.</p>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-title">UH Sugar Land Student Center</p><p class="footer-note">CIS 2336 academic project · Proposed student center, not an official UH booking service</p></div><nav class="footer-links" id="footer-links" aria-label="Footer navigation"></nav></div></footer>
+</body></html>

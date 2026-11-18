@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the proposed UH Sugar Land Student Center, learn about rooms, and try a room-booking demonstration.">
+  <title>Home | UH Sugar Land Student Center</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="UH Sugar Land Student Center, home">
+      <span class="brand-mark" aria-hidden="true">UH</span>
+      <span class="brand-lines"><strong>UH Sugar Land</strong><span>Student Center</span></span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" type="button">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg> Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul class="nav-links" id="nav-links"></ul></nav>
+  </div>
+</header>
+<main id="main" class="page-main container">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Made for the Cougar community</p>
+      <h1 id="hero-title">Your space to study, meet &amp; belong.</h1>
+      <p>Welcome to the proposed UH Sugar Land Student Center. Discover spaces for focused work, group projects, and connecting between classes.</p>
+      <a class="btn btn-primary" href="roombooking.html">Book a Room <span class="btn-arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="hero-visual">
+      <img src="https://www.uh.edu/sugarland/_images/news-images/university-of-houston-at-sugar-land_news_front-of-albert-mamie-george-building-in-summer_900x600.jpg" alt="Albert and Mamie George Building on the University of Houston Sugar Land campus" width="900" height="600">
+      <span class="photo-credit">Photo: University of Houston</span>
+    </div>
+  </section>
+
+  <section class="home-feature-section" aria-labelledby="explore-title">
+    <h2 class="section-title" id="explore-title">Everything you need, in one place</h2>
+    <p class="section-note">Explore the center's plans, get answers, or check out the room-booking demonstration.</p>
+    <div class="feature-grid">
+      <article class="card card-pad">
+        <div class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 9 9-6 9 6v11H3z"/><path d="M9 20v-7h6v7"/></svg></div>
+        <h3>About the Student Center</h3>
+        <p>Learn about the proposed spaces, student resources, and our mission to support the UH Sugar Land community.</p>
+        <a class="link-arrow" href="about.html">Explore the center →</a>
+      </article>
+      <article class="card card-pad">
+        <div class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 7 8-7"/></svg></div>
+        <h3>Developer Contact</h3>
+        <p>Website developed by <strong>Ammar Khan</strong> for CIS 2336.</p>
+        <p><strong>UH email:</strong> <span class="developer-email">aukhan6@cougarnet.uh.edu</span></p>
+        <a class="link-arrow" href="contact.html">Contact the developer →</a>
+      </article>
+      <article class="card card-pad">
+        <div class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Hours &amp; Location</h3>
+        <p>Based at the UH Sugar Land campus. Student Center operating hours will be announced if the center opens.</p>
+        <a class="link-arrow" href="about.html#hours-location">See location information →</a>
+      </article>
+    </div>
+  </section>
+  <aside class="home-banner" aria-label="Frequently asked questions">
+    <div><h2>Have a question?</h2><p>Find quick answers about room requests, access, and student center plans.</p></div>
+    <a href="faq.html" class="btn btn-secondary">View FAQs <span aria-hidden="true">→</span></a>
+  </aside>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-title">UH Sugar Land Student Center</p><p class="footer-note">CIS 2336 academic project · Proposed student center, not an official UH booking service</p></div><nav class="footer-links" id="footer-links" aria-label="Footer navigation"></nav></div></footer>
+</body>
+</html>
